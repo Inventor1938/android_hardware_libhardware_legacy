@@ -13,7 +13,9 @@ LOCAL_SRC_FILES := \
 LOCAL_MODULE := libaudiohw_legacy
 LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_LIBRARIES := libmedia_helper
-LOCAL_CFLAGS := -Wno-unused-parameter
+LOCAL_CFLAGS := -Wno-unused-parameter -Wno-gnu-designator
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../include
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/../include
 
 include $(BUILD_STATIC_LIBRARY)
 

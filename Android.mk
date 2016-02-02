@@ -23,7 +23,7 @@ LOCAL_C_INCLUDES += external/libnl-headers
 endif
 endif
 
-LOCAL_CFLAGS  += -DQEMU_HARDWARE
+LOCAL_CFLAGS  += -DQEMU_HARDWARE -Wno-unused-parameter -Wno-gnu-designator
 QEMU_HARDWARE := true
 
 LOCAL_SHARED_LIBRARIES += libdl
